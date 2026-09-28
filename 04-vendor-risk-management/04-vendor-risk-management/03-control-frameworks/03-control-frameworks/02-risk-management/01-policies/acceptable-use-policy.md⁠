@@ -1,0 +1,49 @@
+# Corporate Acceptable Use Policy (AUP)
+
+**Policy ID:** POL-SEC-01  
+**Effective Date:** September 2026  
+**Version:** 1.0  
+**Scope:** All employees, contractors, interns, and third-party personnel accessing company technology resources.
+
+---
+
+## 1. Purpose & Objective
+The purpose of this Acceptable Use Policy (AUP) is to protect company assets, safeguard sensitive data (including customer PII and intellectual property), and maintain a secure computing environment. Compliance with this policy is mandatory for all individuals granted access to company infrastructure.
+
+---
+
+## 2. Scope of Protected Resources
+This policy applies to all company-owned or managed technology resources, including but not limited to:
+* Desktop and laptop computers (MacBooks, PCs)
+* Mobile devices and corporate smartphones
+* Corporate email accounts, collaboration tools, and cloud storage
+* Internal networks, VPNs, and AWS cloud environments
+
+---
+
+## 3. Acceptable Use Guidelines
+Personnel are expected to exercise responsible judgment when utilizing company resources. Acceptable use includes:
+* Conducting company business and professional development tasks.
+* Utilizing company-approved communication channels (e.g., authorized email and workspace messaging).
+* Maintaining strict credential hygiene, including using unique passwords and enabling hardware-token Multi-Factor Authentication (MFA).
+
+---
+
+## 4. Prohibited Activities
+The following activities are strictly prohibited across all company systems:
+* **Unauthorized Software Installation:** Downloading, installing, or executing unauthorized third-party applications, games, or peer-to-peer (P2P) file-sharing software.
+* **Credential Sharing:** Sharing corporate passwords, API keys, or MFA verification codes with any individual, including coworkers.
+* **Shadow IT:** Utilizing unauthorized cloud services, external storage tools, or unvetted SaaS applications to store or transmit company data.
+* **Inappropriate Content:** Accessing, downloading, or distributing sexually explicit content, hate speech, malicious code, or engaging in illegal activities.
+* **Exfiltration of Data:** Copying or transmitting confidential company data or customer PII to personal cloud accounts, external drives, or unauthorized external endpoints.
+
+---
+
+## 5. Security Incident Reporting
+* Any lost or stolen corporate hardware must be reported to the IT & Security Team immediately (within 2 hours).
+* Suspected phishing emails, security anomalies, or unauthorized access attempts must be reported via the internal security notification channel.
+
+---
+
+## 6. Enforcement & Compliance Violations
+Failure to comply with this Acceptable Use Policy may result in disciplinary action up to and including termination of employment or contract, as well as potential legal liability.
