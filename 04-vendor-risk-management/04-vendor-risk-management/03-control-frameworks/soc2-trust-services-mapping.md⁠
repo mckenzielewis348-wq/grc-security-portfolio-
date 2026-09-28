@@ -1,0 +1,27 @@
+# SOC 2 Type II - Trust Services Criteria Control Matrix
+
+**Framework:** AICPA SOC 2 (2017 Trust Services Criteria)  
+**Scope:** Security (CC), Availability (A), and Confidentiality (C)  
+**Status:** Internal Draft / Audit Readiness Review  
+
+---
+
+## Control Mapping & Implementation Matrix
+
+| Control ID | Trust Services Criteria (TSC) | Control Title & Description | Implementation Method / Technical Evidence | Test Status |
+| :--- | :--- | :--- | :--- | :---: |
+| **CC6.1** | CC6: Logical and Physical Access Controls | **Access Control Policy:** The entity restricts logical access to software, data, and infrastructure based on least privilege and role-based access control (RBAC). | Enforced via GitHub Teams, Okta SSO, and AWS IAM policies restricting root/admin access. | **Implemented** |
+| **CC6.3** | CC6: Logical and Physical Access Controls | **User Provisioning & Offboarding:** Access is granted upon management approval and promptly revoked upon termination or role change. | Automated user de-provisioning workflows tied to HR system status updates and Okta hooks. | **Implemented** |
+| **CC6.8** | CC6: Logical and Physical Access Controls | **Endpoint Protection:** Workstations used to access production environments are configured with endpoint detection and response (EDR) and disk encryption. | Managed via mobile device management (MDM) enforcing FileVault and CrowdStrike EDR. | **Implemented** |
+| **CC7.1** | CC7: System Operations | **Vulnerability Management:** The entity detects and mitigates vulnerabilities across infrastructure and codebases. | Automated weekly vulnerability scans, Dependabot alerts in GitHub, and quarterly third-party pentests. | **Implemented** |
+| **CC7.2** | CC7: System Operations | **Security Incident Monitoring:** The entity monitors system components for anomalous activity and potential security incidents. | AWS CloudTrail, GuardDuty, and automated Slack alerts configured for high-severity security events. | **Implemented** |
+| **CC8.1** | CC8: Change Management | **Change Management Authorization:** Changes to production infrastructure and software are tested, reviewed, and approved prior to deployment. | Enforced via GitHub branch protection rules, required peer code reviews, and automated CI/CD pipeline checks. | **Implemented** |
+| **A1.2** | A1: Availability | **Backup & Disaster Recovery:** The entity backs up critical production data regularly to ensure system availability during disruptions. | Automated daily database snapshots with cross-region replication configured in AWS S3 / RDS. | **Implemented** |
+| **C1.2** | C1: Confidentiality | **Data Encryption at Rest & In Transit:** Confidential customer data is encrypted while stored and while transmitted across public networks. | AES-256 enabled for databases/storage buckets; TLS 1.3 enforced for all web applications. | **Implemented** |
+
+---
+
+## Auditor Notes & Artifact References
+* **Access Logs:** Available upon request via Okta audit logs (`05-audit-and-evidence/okta-access-logs.csv`).
+* **Change Tickets:** Tied to GitHub Pull Request histories and commit logs.
+* **Vulnerability Reports:** Generated via automated pipeline scans and stored in security reporting repositories.
