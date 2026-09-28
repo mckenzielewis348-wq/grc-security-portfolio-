@@ -1,0 +1,43 @@
+# Vendor Risk Assessment & Approval Recommendation
+
+**To:** Chief Information Security Officer (CISO)  
+**From:** GRC Analyst Team  
+**Date:** September 2026  
+**Subject:** Security Assessment & Risk Decision for CloudPay Solutions  
+
+---
+
+## Executive Summary
+Acme Financial Technologies evaluated **CloudPay Solutions** to process employee payroll and sensitive Personally Identifiable Information (PII). Based on our security assessment, CloudPay exhibits a **MODERATE** overall risk level. We recommend **Conditional Approval** pending contractually binding remediation items.
+
+---
+
+## Key Risk Findings & Gaps
+
+### 1. Breach Notification Timeline (High Severity)
+* **Finding:** CloudPay's standard incident response SLA allows 72 hours for breach notification.
+* **Corporate Standard:** Acme policy requires vendor notification within **24 hours** of a confirmed breach involving employee PII.
+* **Impact:** Delayed notification limits our ability to mitigate downstream risk and comply with regulatory disclosure mandates.
+
+### 2. User Access Review Cadence (Medium Severity)
+* **Finding:** Administrative access reviews are conducted semi-annually rather than quarterly.
+* **Impact:** Increases the window of opportunity for privilege creep and unrevoked terminated employee access.
+
+---
+
+## Risk Mitigation & Decision Matrix
+
+| Risk Identified | Required Remediation / Safeguard | Status |
+| :--- | :--- | :--- |
+| **72-hr Breach SLA** | Negotiate custom SLA in Master Services Agreement (MSA) capping notification at 24 hours. | Pending Legal Review |
+| **Semi-Annual Access Reviews** | Require CloudPay to provide quarterly access attestation reports for Acme-dedicated accounts. | Pending Vendor Sign-off |
+| **ISO 27001 Gap** | Accept SOC 2 Type II report as compensating control for ISO 27001 status. | Accepted |
+
+---
+
+## Final Recommendation
+**APPROVED WITH CONDITIONS**
+
+CloudPay Solutions may be onboarded once the following prerequisites are met:
+1. Legal amends the MSA to mandate **24-hour breach notification**.
+2. CloudPay commits to providing **quarterly access audit logs**.
