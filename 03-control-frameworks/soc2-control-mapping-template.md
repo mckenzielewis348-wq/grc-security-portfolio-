@@ -4,7 +4,7 @@ Use this template to map internal controls to SOC 2 Trust Services Criteria (TSC
 
 | Control ID | Control Description | SOC 2 TSC | Control Owner | Frequency | Evidence Artifact | Testing Method | Status | Notes |
 |---|---|---|---|---|---|---|---|---|
-| AC-01 | Example: Multi-factor authentication for privileged access | CC6.2 | IT Security | Continuous | Access control configuration export | Inspection | Implemented | Validate quarterly |
+| AC-01 | Example: Multi-factor authentication for privileged access | CC6.1 | IT Security | Continuous | Access control configuration export | Inspection | Implemented | Validate quarterly |
 
 ## Suggested Mapping Process
 1. Inventory existing policies, procedures, and technical controls.

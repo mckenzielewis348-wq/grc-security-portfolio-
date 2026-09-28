@@ -3,7 +3,7 @@
 This folder is reserved for audit planning materials and evidence artifacts.
 
 ## Suggested Contents
-- Audit request lists (Provided by Evidence Request lists)
+- Audit request lists (provided through evidence request lists)
 - Evidence inventory logs
 - Control testing samples
 - Management responses and remediation evidence
