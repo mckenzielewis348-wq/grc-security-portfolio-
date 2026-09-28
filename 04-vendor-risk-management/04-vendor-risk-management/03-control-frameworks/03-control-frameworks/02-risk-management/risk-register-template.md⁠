@@ -1,0 +1,36 @@
+# Corporate Information Security Risk Register
+
+**Framework Alignment:** NIST SP 800-30 / ISO 31000  
+**Methodology:** Qualitative Risk Scoring (Likelihood × Impact)  
+**Last Updated:** September 2026  
+
+---
+
+## Risk Scoring Legend
+* **Likelihood Score (1–5):** 1 = Rare, 2 = Unlikely, 3 = Possible, 4 = Likely, 5 = Almost Certain  
+* **Impact Score (1–5):** 1 = Negligible, 2 = Minor, 3 = Moderate, 4 = Major, 5 = Critical  
+* **Risk Score (Inherent / Residual):** Likelihood × Impact  
+  * **Critical (15–25):** Immediate escalation and executive mitigation required.  
+  * **High (10–14):** Active mitigation required within 30 days.  
+  * **Medium (5–9):** Monitored and addressed during normal operational cycles.  
+  * **Low (1–4):** Accepted or managed with routine maintenance.  
+
+---
+
+## Risk Register Inventory
+
+| Risk ID | Risk Category | Threat / Vulnerability Description | Inherent Likelihood | Inherent Impact | Inherent Risk Score | Existing Controls & Mitigations | Residual Likelihood | Residual Impact | Residual Risk Score | Risk Treatment Strategy | Owner |
+| :--- | :--- | :--- | :---: | :---: | :---: | :--- | :---: | :---: | :---: | :--- | :--- |
+| **RSK-01** | Cloud Security | **Unencrypted S3 Buckets:** Misconfigured AWS storage buckets exposing sensitive customer PII to the public internet. | 4 | 5 | **20 (Critical)** | Enabled AWS Block Public Access settings and automated S3 compliance scanning workflows via GitHub Actions. | 2 | 3 | **6 (Medium)** | **Mitigate** | Cloud Security Team |
+| **RSK-02** | Identity & Access | **Credential Stuffing / Compromised Passwords:** Employees reusing corporate credentials on external vulnerable sites, leading to unauthorized account takeover. | 4 | 4 | **16 (Critical)** | Enforced Okta Single Sign-On (SSO) and mandatory hardware-token Multi-Factor Authentication (MFA) across all SaaS tools. | 2 | 2 | **4 (Low)** | **Mitigate** | IT & Identity Team |
+| **RSK-03** | Human Resources | **Phishing & Social Engineering:** Staff members falling victim to spear-phishing emails, granting attackers initial network access. | 4 | 4 | **16 (Critical)** | Conduct quarterly security awareness training and simulated phishing campaigns for all personnel. | 3 | 3 | **9 (Medium)** | **Mitigate** | Security Operations |
+| **RSK-04** | Third-Party | **Vendor Data Breach:** A SaaS payroll or HR vendor suffers a major security breach, leaking employee financial data. | 3 | 4 | **12 (High)** | Conduct annual security assessments, review SOC 2 Type II reports, and enforce strict 24-hour breach notification SLAs in contracts. | 2 | 3 | **6 (Medium)** | **Mitigate** | TPRM / GRC Team |
+| **RSK-05** | Vulnerability | **Unpatched Software Vulnerabilities:** Critical zero-day flaws remaining unpatched on internal/external servers. | 3 | 4 | **12 (High)** | Automated weekly vulnerability scanning and established a 14-day patch SLA for critical severity flaws. | 2 | 2 | **4 (Low)** | **Mitigate** | Infrastructure Team |
+| **RSK-06** | Data Privacy | **Lack of Data Retention Policy:** Retaining customer PII indefinitely, increasing exposure surface area during a compliance audit or breach. | 3 | 3 | **9 (Medium)** | Drafted a formal data retention and automated purging policy (pending legal review). | 2 | 2 | **4 (Low)** | **Transfer / Mitigate** | Legal & Compliance |
+
+---
+
+## Risk Heat Map Distribution Summary
+* **Critical Risks (Score 15–25):** 3 identified (Managed down via post-treatment controls).
+* **High Risks (Score 10–14):** 2 identified.
+* **Medium / Low Risks (Score < 10):** Monitored continuously through internal audit check sheets.
